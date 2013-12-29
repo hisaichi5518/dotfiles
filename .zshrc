@@ -52,4 +52,5 @@ export PATH="/Users/hisaichi5518/.plenv/shims:/Users/hisaichi5518/.rbenv/shims:/
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 alias tmux="tmux -f ~/.tmux.conf"
-
+alias gs="git status"
+alias vi="~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
