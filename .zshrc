@@ -51,3 +51,5 @@ export PATH="/Users/hisaichi5518/.plenv/shims:/Users/hisaichi5518/.rbenv/shims:/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+alias tmux="tmux -f ~/.tmux.conf"
+
