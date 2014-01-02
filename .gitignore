@@ -3,4 +3,5 @@
 !.zshrc
 !.zshenv
 !.vimrc
-!.oh-my-zsh/custom/*.zsh
+!.zsh/
+!.zsh/*
