@@ -24,7 +24,6 @@ NeoBundleLazy 'Shougo/neocomplete.vim', {
             \     'insert' : 1,
             \ }}
 
-
 NeoBundle 'c9s/perlomni.vim'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'thinca/vim-quickrun'
