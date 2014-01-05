@@ -5,7 +5,9 @@ function percol-select-history() {
     else
         tac="tail -r"
     fi
-    BUFFER=$(history| awk '{print $2}' | tail -r | percol --query "$LBUFFER")
+
+    # oh-my-zshがhistoryを上書きしている
+    BUFFER=$(\history -n 0 | tail -r | percol --query "$LBUFFER")
     CURSOR=$#BUFFER
     zle clear-screen
 }
