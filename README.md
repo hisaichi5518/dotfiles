@@ -1,9 +1,11 @@
 # Setup Mac
 
-## system rubyでhomebrewをいれる
+```shell
+# system rubyでhomebrewをいれる
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 # system rubyでrbenvをいれる
+
 brew install openssl
 brew install readline
 brew install ruby-build
@@ -15,7 +17,7 @@ rbenv install 2.1.0
 rbenv rehash
 rbenv global 2.1.0
 
-## homebrew-caskいれる
+# homebrew-cask
 brew tap phinze/homebrew-cask
 brew install brew-cask
 brew cask install google-chrome
@@ -68,10 +70,11 @@ defaults write com.apple.finder AppleShowAllFiles TRUE
 
 # .gitconfigの設定
 
-## perlをいれる
+# perlをいれる
 echo 'if which plenv > /dev/null; then eval "$(plenv init 0)"; fl' > ~/.bash_profile
 plenv install 5.18.1
 plenv rehash
 plenv global 5.18.1
 
-## どこでもMyMac設定など
+# どこでもMyMac設定など
+```
