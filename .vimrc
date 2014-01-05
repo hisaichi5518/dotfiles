@@ -84,9 +84,7 @@ set listchars=tab:>-,trail:_,extends:\
 set t_Co=256
 set hlsearch
 
-" let g:hybrid_use_iTerm_colors = 1
 colorscheme Tomorrow-Night
-" colorscheme hybrid
 
 " encoding
 set encoding=utf-8
