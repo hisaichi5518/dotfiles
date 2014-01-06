@@ -1,4 +1,5 @@
 alias tmux="tmux -f ~/.tmux.conf"
+alias gti=git
 alias gs="git status"
 alias gl="tig"
 alias lg=gl
