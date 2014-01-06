@@ -31,6 +31,7 @@ brew cask install xtrafinder
 brew cask install sublime-text
 brew cask install google-drive
 brew cask install iterm2
+brew cask skitch
 
 # ghに必要
 brew tap jingweno/gh
