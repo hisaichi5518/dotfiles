@@ -1,10 +1,15 @@
+# tmux
 alias tmux="tmux attach || tmux -f ~/.tmux.conf"
 alias t=tmux
+
+# git
 alias gti=git
 alias gt=git
 alias gs="git status"
 alias gl="tig"
 alias lg=gl
+
+# vim
 alias vi='/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias iv=vi
 alias v=vi
