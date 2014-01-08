@@ -8,6 +8,7 @@ alias gt=git
 alias gs="git status"
 alias gl="tig"
 alias lg=gl
+alias gdd="git diff --cached"
 
 # vim
 alias vi='/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
