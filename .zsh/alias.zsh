@@ -15,3 +15,6 @@ alias vi='/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias iv=vi
 alias v=vi
 alias l=ls
+
+# Google Drive
+alias google_drive="open $HOME/Google\ ドライブ"
