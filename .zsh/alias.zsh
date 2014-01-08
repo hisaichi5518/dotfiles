@@ -1,4 +1,5 @@
-alias tmux="tmux -f ~/.tmux.conf"
+alias tmux="tmux attach || tmux -f ~/.tmux.conf"
+alias t=tmux
 alias gti=git
 alias gt=git
 alias gs="git status"
