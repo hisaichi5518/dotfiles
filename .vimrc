@@ -65,6 +65,7 @@ set listchars=tab:>-,trail:_,extends:\
 set t_Co=256
 set hlsearch
 
+set bg=dark
 colorscheme Tomorrow-Night
 
 " encoding
