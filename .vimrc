@@ -31,6 +31,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle "osyo-manga/shabadou.vim"
 NeoBundle "jceb/vim-hier"
 NeoBundle "dannyob/quickfixstatus"
+NeoBundle "cespare/vim-toml"
+NeoBundle "vim-perl/vim-perl"
 
 " plugin config
 let g:vimproc_dll_path  = $HOME.'/.vim/bundle/vimproc/autoload/vimproc_mac.so'
