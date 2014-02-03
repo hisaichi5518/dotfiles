@@ -123,6 +123,7 @@ autocmd BufEnter *Cakefile execute ":setlocal filetype=coffee"
 autocmd BufEnter *.md      execute ":setlocal filetype=markdown"
 autocmd BufEnter *.dart    execute ":setlocal filetype=dart"
 autocmd BufEnter *.tx      execute ":setlocal filetype=xslate"
-autocmd BufEnter *.mt      execute "setlocal filetype=tmt2html"
+autocmd BufEnter *.mt      execute ":setlocal filetype=tmt2html"
+autocmd BufEnter *.faced   execute ":setlocal noet"
 
 NeoBundleCheck
