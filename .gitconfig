@@ -11,3 +11,5 @@
 	editor = /usr/bin/vim
 [github]
 	user = hisaichi5518
+[push]
+	default = current
