@@ -9,3 +9,5 @@
 !.zsh/*
 !.tmux.conf
 !README.md
+!.atig/
+!.atig/config
