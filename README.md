@@ -54,6 +54,7 @@ brew install mosh
 brew install autossh # for ssh -D
 brew install pstree
 brew install python #=> pip install percol
+brew install w3m
 
 # Google日本語入力
 
