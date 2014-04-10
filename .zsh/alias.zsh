@@ -23,4 +23,3 @@ alias l=ls
 
 # Google Drive
 alias google_drive="open $HOME/Google\ ドライブ"
-alias google="w3m https://google.com/"
