@@ -1,0 +1,13 @@
+*
+!.gitignore
+!.gitconfig
+!.zshrc
+!.zshenv
+!.gvimrc
+!.vimrc
+!.zsh/
+!.zsh/*
+!.tmux.conf
+!README.md
+!.atig/
+!.atig/config

@@ -1,0 +1,15 @@
+[user]
+	name = hisaichi5518
+	email = hisaichi5518@gmail.com
+[color]
+	ui = true
+[pager]
+	log = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+	show = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+	diff = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+[core]
+	editor = /usr/bin/vim
+[github]
+	user = hisaichi5518
+[push]
+	default = current
