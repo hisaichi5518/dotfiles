@@ -32,12 +32,14 @@ NeoBundle "jceb/vim-hier"
 NeoBundle "dannyob/quickfixstatus"
 NeoBundle "cespare/vim-toml"
 NeoBundle "vim-perl/vim-perl"
+NeoBundle "godlygeek/tabular"
+NeoBundle "mattn/benchvimrc-vim"
 
 " plugin config
 let g:vimproc_dll_path  = $HOME.'/.vim/bundle/vimproc/autoload/vimproc_mac.so'
 let g:quickrun_config = {}
 
-let g:quickrun_config._    = {'runner' : 'vimproc'}
+let g:quickrun_config._    = {'runner' : 'vimproc', "runner/vimproc/updatetime" : 1}
 let g:quickrun_config.perl = {'command' : 'perl', 'cmdopt': '-MProject::Libs' }
 
 let g:neocomplete#enable_at_startup = 1
@@ -60,7 +62,7 @@ set listchars=tab:>-,trail:_,extends:\
 set t_Co=256
 set hlsearch
 
-set bg=dark
+" set bg=dark
 colorscheme Tomorrow-Night
 
 " encoding
@@ -80,10 +82,12 @@ set clipboard+=autoselect,unnamed
 set whichwrap=b,s,h,l,<,>,[,] " http://vimwiki.net/?%27whichwrap%27
 set backspace=indent,eol,start
 
-" backup, swap, viminfo
+" backup, swap, viminfo, undofile
 " http://nanasi.jp/articles/howto/file/seemingly-unneeded-file.html#id5
+" http://www.kaoriya.net/blog/2014/03/30/
 set noswapfile
 set nobackup
+set noundofile
 
 " 前回終了させた場所で再開
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
