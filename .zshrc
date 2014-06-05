@@ -4,5 +4,5 @@ ZSH_THEME="hisaichi5518"
 ZSH_CUSTOM="$HOME/.zsh"
 DISABLE_AUTO_UPDATE=true
 
-plugins=(git autojump heroku bundler brew mosh rails)
+plugins=(git autojump heroku bundler brew mosh rails golang)
 source $ZSH/oh-my-zsh.sh
