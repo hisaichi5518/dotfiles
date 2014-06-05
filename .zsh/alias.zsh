@@ -20,10 +20,6 @@ alias v=vi
 
 # その他
 alias l=ls
-<<<<<<< HEAD
 
-=======
-alias 殺す="kill"
->>>>>>> fix/for-new-air
 # Google Drive
 alias google_drive="open $HOME/Google\ ドライブ"
