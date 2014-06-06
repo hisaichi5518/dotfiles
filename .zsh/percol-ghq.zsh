@@ -7,4 +7,4 @@ function percol-src () {
     zle clear-screen
 }
 zle -N percol-src
-bindkey '^q' percol-src
+bindkey '^s' percol-src
