@@ -1,6 +1,6 @@
 function peco-git-checkout () {
-    local selected_dir=$(git branch | sed 's/\*//' | sed 's/\ //g' | peco --query "$LBUFFER")
-    BUFFER="git checkout ${selected_dir}"
+    local selected_branch=$(git branch | sed 's/^\*//' | sed 's/\ //g' | peco --query "$LBUFFER")
+    BUFFER="git checkout ${selected_branch}"
     zle accept-line
     zle clear-screen
 }
