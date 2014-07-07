@@ -36,7 +36,7 @@ NeoBundle "godlygeek/tabular"
 NeoBundle "mattn/benchvimrc-vim"
 
 " plugin config
-let g:vimproc_dll_path  = $HOME.'/.vim/bundle/vimproc/autoload/vimproc_mac.so'
+let g:vimproc_dll_path  = '~/.vim/bundle/vimproc/autoload/vimproc_mac.so'
 let g:quickrun_config = {}
 
 let g:quickrun_config._    = {'runner' : 'vimproc', "runner/vimproc/updatetime" : 1}
