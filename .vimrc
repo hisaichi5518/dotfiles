@@ -128,6 +128,12 @@ autocmd BufEnter *.dart    execute ":setlocal filetype=dart"
 autocmd BufEnter *.tx      execute ":setlocal filetype=xslate"
 autocmd BufEnter *.mt      execute ":setlocal filetype=tmt2html"
 autocmd BufEnter *.faced   execute ":setlocal noet"
+autocmd BufEnter *.go      execute ":setlocal noet"
 autocmd BufEnter Gemfile.* execute ":setlocal filetype=ruby"
+
+" golang専用の設定
+set rtp+=$GOROOT/misc/vim
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+set completeopt=menu,preview
 
 NeoBundleCheck
