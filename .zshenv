@@ -4,6 +4,9 @@ export GOPATH="$HOME/.go"
 # see https://github.com/sstephenson/rbenv/issues/369#issuecomment-22200587
 export PATH="/usr/local/bin:$HOME/bin:$HOME/.go/bin:$PATH"
 
+# wget http://curl.haxx.se/ca/cacert.pem
+export SSL_CERT_FILE=~/certs/cacert.pem
+
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/shims:${PATH}"
 source "/usr/local/Cellar/rbenv/0.4.0/completions/rbenv.zsh"
