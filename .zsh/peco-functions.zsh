@@ -37,3 +37,14 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+function peco-bundle-open() {
+    local selected=$(bundle show 2> /dev/null | sed -e '/^  \*/!d; s/^  \* \([^ ]*\) .*/\1/' | peco --query "$LBUFFER")
+    if [ -n "$selected" ]; then
+        BUFFER="bo ${selected}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-bundle-open
+bindkey '^o' peco-bundle-open

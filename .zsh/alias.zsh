@@ -23,3 +23,4 @@ alias l=ls
 
 # Google Drive
 alias google_drive="open $HOME/Google\ ドライブ"
+alias bo="EDITOR=vi bundle open"
