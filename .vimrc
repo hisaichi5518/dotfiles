@@ -115,6 +115,9 @@ nmap ,j   :%!python -m json.tool<CR>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nmap <C-p> :Unite source<CR>
 
+inoremap <C-d> $
+inoremap <C-a> @
+
 "  filetype
 filetype plugin indent on
 autocmd FileType javascript execute ':setlocal tabstop=2'
