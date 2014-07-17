@@ -19,7 +19,7 @@ zle -N peco-ghq
 bindkey '^s' peco-ghq
 
 function peco-git-checkout () {
-    local selected_branch=$(git branch | grep -v "\*" | peco --query "$LBUFFER")
+    local selected_branch=$(git branch | sed 's/[\* ]//g' | peco --query "$LBUFFER")
     if [ -n "$selected_branch" ]; then
         BUFFER="git checkout ${selected_branch}"
         zle accept-line
