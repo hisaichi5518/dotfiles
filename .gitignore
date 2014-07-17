@@ -11,3 +11,5 @@
 !README.md
 !.atig/
 !.atig/config
+!bin/
+!bin/*
