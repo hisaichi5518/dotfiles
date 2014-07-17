@@ -33,7 +33,7 @@ NeoBundle "dannyob/quickfixstatus"
 NeoBundle "cespare/vim-toml"
 NeoBundle "vim-perl/vim-perl"
 NeoBundle "godlygeek/tabular"
-NeoBundle "mattn/benchvimrc-vim"
+NeoBundle "todesking/ruby_hl_lvar.vim"
 
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
