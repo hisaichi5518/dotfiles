@@ -1,0 +1,31 @@
+#!/Users/hisaichi5518/.plenv/shims/perl
+
+use 5.16.1;
+use strict;
+use warnings;
+use Path::Tiny;
+use IO::Prompt::Simple;
+
+main(@ARGV);
+
+sub main {
+    my (@files) = @_;
+    for my $file (@files) {
+        next if !confirm($file);
+        del($file);
+    }
+}
+
+sub confirm {
+    my ($file) = @_;
+    say path($file)->slurp;
+
+    my $answer = prompt 'delete this file? [y/n]';
+    return 1 if $answer eq "y";
+    return;
+}
+
+sub del {
+    my ($file) = @_;
+    say `~/bin/del $file`;
+}

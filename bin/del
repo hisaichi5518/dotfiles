@@ -1,0 +1,9 @@
+#!/usr/local/bin/ruby
+require 'fileutils'
+
+dir = "#{ENV["HOME"]}/.Trash/#{Time.now.to_i}"
+Dir.mkdir(dir)
+trash = Dir.new(dir)
+
+puts "#{ARGV.join(', ')} => #{trash.to_path}"
+FileUtils.mv(ARGV, trash)
