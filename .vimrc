@@ -38,6 +38,8 @@ NeoBundle "mattn/benchvimrc-vim"
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 
+call neobundle#end()
+
 " plugin config
 let g:vimproc_dll_path  = '~/.vim/bundle/vimproc/autoload/vimproc_mac.so'
 let g:quickrun_config = {}
