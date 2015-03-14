@@ -14,7 +14,7 @@
 [push]
 	default = current
 [ghq]
-    root=~/projects
+    root=~/project
     root=~/.go/src
 [alias]
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
