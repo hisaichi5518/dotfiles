@@ -2,6 +2,8 @@
 alias tmux="tmux attach || tmux -f ~/.tmux.conf"
 alias t=tmux
 
+alias strace="sudo dtruss"
+
 # git
 alias gti=git
 alias gt=git
