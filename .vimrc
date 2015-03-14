@@ -31,17 +31,18 @@ NeoBundle "osyo-manga/shabadou.vim"
 NeoBundle "jceb/vim-hier"
 NeoBundle "dannyob/quickfixstatus"
 NeoBundle "cespare/vim-toml"
-NeoBundle "vim-perl/vim-perl"
 NeoBundle "godlygeek/tabular"
 NeoBundle "todesking/ruby_hl_lvar.vim"
 
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-endwise'
+
+" NeoBundle 'vim-ruby/vim-ruby'
 
 call neobundle#end()
 
 " plugin config
-let g:vimproc_dll_path  = '~/.vim/bundle/vimproc/autoload/vimproc_mac.so'
 let g:quickrun_config = {}
 
 let g:quickrun_config._    = {'runner' : 'vimproc', "runner/vimproc/updatetime" : 1}
@@ -55,6 +56,8 @@ let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 let g:unite_enable_start_insert = 1
 let g:unite_enable_ignore_case  = 1
 let g:unite_enable_smart_case   = 1
+
+let g:ruby_hl_lvar_auto_enable = 1
 
 imap <expr><C-o>
             \ neosnippet#expandable() <Bar><Bar> neosnippet#jumpable() ?
@@ -142,6 +145,10 @@ autocmd BufEnter *.mt      execute ":setlocal filetype=tmt2html"
 autocmd BufEnter *.faced   execute ":setlocal noet"
 autocmd BufEnter *.go      execute ":setlocal noet"
 autocmd BufEnter Gemfile.* execute ":setlocal filetype=ruby"
+" let g:ruby_hl_lvar_hl_group = 'RubyLocalVariable'
+
+autocmd BufEnter Vagrantfile execute ":setlocal filetype=ruby"
+
 
 " golang専用の設定
 set rtp+=$GOROOT/misc/vim
