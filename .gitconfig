@@ -8,7 +8,7 @@
 	show = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
 	diff = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
 [core]
-	editor = /usr/bin/vim
+	editor = vim
 [github]
 	user = hisaichi5518
 [push]
