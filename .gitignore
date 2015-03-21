@@ -13,3 +13,4 @@
 !.atig/config
 !bin/
 !bin/*
+.zsh/secret.zsh
